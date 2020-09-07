@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.jackpot-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  background: rgb(4,94,239);
+  background: radial-gradient(circle, rgba(4,94,239,1) 50%, rgba(2,16,86,1) 100%);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.jackpot-container .spiral {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -3;
+  opacity: .7;
+}
+
+.jackpot-container .background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: -2;
+}
+
+.jackpot-container .coins {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.jackpot-container .dots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: -1;
+}
+
+.jackpot-content {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+}
+
+.jackpot-content .favbet-logo {
+  display: block;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+}
+
+.jackpot-content .jackpot-title {
+  display: block;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.jackpot-counter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jackpot-counter .jackpot-wrapper {
+  width: 250px;
+}
+
+.jackpot-counter .jackpot-numbers {
+  position: absolute;
+  letter-spacing: 5px;
+  font-size: 42px;
+  font-weight: 400;
+  color: #000;
+  text-shadow:
+       1px 1px 0 gold,
+     -1px -1px 0 goldenrod,  
+      1px -1px 0 gold,
+      -1px 1px 0 goldenrod,
+       1px 1px 0 gold;
+}
