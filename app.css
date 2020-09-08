@@ -97,16 +97,12 @@ body {
   width: 250px;
 }
 
-.jackpot-counter .jackpot-numbers {
-  position: absolute;
-  letter-spacing: 5px;
+.jackpot-counter #jackpot-numbers {
+  letter-spacing: 1px;
   font-size: 42px;
-  font-weight: 400;
-  color: #000;
-  text-shadow:
-       1px 1px 0 gold,
-     -1px -1px 0 goldenrod,  
-      1px -1px 0 gold,
-      -1px 1px 0 goldenrod,
-       1px 1px 0 gold;
+  font-weight: 700;
+  color:	gold;
+	background: linear-gradient(to bottom, #facb6d, #FCF6BA, #facb6d, #facb6d);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
